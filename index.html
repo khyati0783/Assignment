@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        body{
+            background-color: black;
+            color: aliceblue;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            border: 4px solid rgb(209, 104, 186);
+        }
+        .np{
+            text-align: center;
+            font-size: 80px;
+            color: aqua;
+        }
+        .save{
+            margin-right: 10px;
+            border: 4px solid whitesmoke;
+            border-radius: 20px;
+            height: 40px;
+            width: 200px;
+            font-size: x-large;
+            background-color: black;
+            color: aqua;
+        }
+        .save:hover{
+            background-color: rgb(62, 60, 60);
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class="np"> Note Pad </h1>
+    <div>
+        <div>
+            <textarea class="box" cols="100" rows="10" ></textarea>
+        </div>
+        <div style="display: flex; flex-direction: row; margin-top: 30px;">
+            <button class="save" type="button" onclick="saveText()"> Save </button>
+            <button class="save" type="button" onclick="clearText()"> Clear </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
